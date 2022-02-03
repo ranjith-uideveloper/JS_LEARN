@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Arrays</title>
+</head>
+<body>
+    
+    <h4>JS ARRAYS</h4>
+
+    <script>
+        var countries = ["ind", "aus", "usa", "uk", "spain"];
+        
+        for(var i=0; i<countries.length; i++){
+            //console.log(countries[i]);
+        }
+
+        var numerics = [1,8,47,56,78,14,0,6,55,45,15];
+        var numlength = numerics.length;
+        console.log(numlength);
+        for(var num=0; num<numerics.length; num++){
+            if(num%2 == 0){
+                //document.write("&nbsp;" +numerics[num]);
+            }
+        }
+
+        //document.write(numerics.sort());
+
+        
+
+        var numbers = [1,2,3,4,5,6,7,8,9,10];
+
+        // for(number of numbers){
+        //     if(number%2 == 0){
+        //         console.log(number/2);
+        //     }
+        // }
+
+        for( var i=0; i<numbers.length; i++ ){
+            if(numbers != null){
+                console.log("uhgihgigkg");
+            }else{
+                console.log("testing");
+            }
+        }
+        
+        var names = ["James", "Andrews", "William", "Cameron", "Smith", "Pollard"];
+        console.log(names.sort());
+
+        var random = [5,8,110,6,9,7,65,56,22,1];
+        random.sort(function (x,y){
+            return y-x;
+        });
+        console.log(random);
+
+        var numbers1to10 = [1,5,6,3,4,10,9,8];
+
+        numbers1to10.sort(function(x,y){
+            return x-y;
+        });
+
+        console.log(numbers1to10);
+
+        var oddnum = [1,2,3,4,5,6,7,8,9];
+        
+        for(var i=0; i<oddnum.length;i++){ 
+            if(i%2 == 0){
+                console.log(oddnum[i]);
+            }    
+        }
+
+        var emp = [
+            ["A", "a", "1"],["B", "b", "2"],["C", "c", "3"]
+        ];
+
+        for(var i=0, lev1 = emp.length; i<lev1; i++){
+            //console.log(emp[i][1]);
+            for(var j=0, lev2 = emp[i].length; j<lev2; j++){
+                //console.log(emp[i][2]);
+            }
+        }
+
+
+        //console.log(emp[1][2]);
+
+        var animals = ["Lion", "Tiger", "Leopard", "Aligator", "Fox", "Giraffe", "Elephant"];
+        animals.reverse();
+        console.log(animals);
+
+        for(var i=0; i<animals.length; i++){
+            if(animals[i] == "Lion"){
+                console.log(animals[i]);
+            }
+        }
+
+        var myNum = [2,6,22,1,4,3,8,7,90,5];
+
+        myNum.sort((x,y)=>x-y);
+
+        console.log(myNum);
+
+    </script>
+
+</body>
+</html>

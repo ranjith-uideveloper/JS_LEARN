@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+    <input type="text" onkeyup="this.value = this.value.toUpperCase();" onfocus="changeBackground(this);" id="addUpper">
+    <br/><br/>
+
+    <input type="number" name="" onkeyup="displayTen()" id="addNumbers" />
+
+    <br/><br/>
+    <form action="">
+        <input type="text" id="addText">
+        <button type="button" onclick="clickToAdd()">Add Content</button>
+        <div id="displayData"></div>
+    </form>
+
+    
+    <script>
+        var changeBackground=()=>{
+            document.getElementById("addUpper").style.color = "green";
+        }
+
+        var displayTen=()=>{
+            var numAdd = document.getElementById("addNumbers").value;
+            if(numAdd > 10){
+                alert("Please Enter 1 To 10 Numbers Only");
+            }
+        }
+
+        var data = [];
+
+        var clickToAdd=()=>{
+            var inputData = document.getElementById("addText").value;
+            document.getElementById("displayData").innerHTML += "<p>"+inputData+"</p>";
+            data.push(inputData);
+            console.log(data);
+        }
+
+    </script>
+
+
+</body>
+</html>

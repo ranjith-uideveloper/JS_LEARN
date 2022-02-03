@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS METHODS</title>
+</head>
+<body>
+    
+    <h4>JS Calculator</h4>
+
+    <input type="number" name="" id="fNum">
+    <input type="number" name="" id="sNum">
+
+    <button type="submit" onclick="addResult();">Add</button>
+    <button type="submit" onclick="substract();">Substract</button>
+    <button type="submit" onclick="multiply();">Multiply</button>
+
+    <script>
+		
+        var addResult=()=>{
+            var num1 = parseInt(document.getElementById("fNum").value);
+            var num2 = parseInt(document.getElementById("sNum").value); 
+            var addRes = num1 + num2;
+            console.log(addRes);
+            document.getElementById("fNum").value = "";
+            document.getElementById("sNum").value = "";
+        }
+
+        var substract=()=>{
+            var num1 = parseInt(document.getElementById("fNum").value);
+            var num2 = parseInt(document.getElementById("sNum").value);
+            var substr = num1 - num2;
+            console.log(substr);
+            document.getElementById("fNum").value = "";
+            document.getElementById("sNum").value = "";
+        }
+
+        var multiply=()=>{
+            var num1 = parseInt(document.getElementById("fNum").value);
+            var num2 = parseInt(document.getElementById("sNum").value);
+            var multPl = num1*num2;
+            console.log(multPl);
+            document.getElementById("fNum").value = "";
+            document.getElementById("sNum").value = "";
+        }
+
+    </script>
+
+    <br/>
+    <br/>
+    <input type="number" name="" id="numOne">
+    <input type="number" onkeyup="showRes();" name="" id="numTwo">
+    <h5 id="getRes"></h5>
+
+    <script>
+        var showRes=()=>{
+            var inp1 = parseInt(document.getElementById("numOne").value);
+            var inp2 = parseInt(document.getElementById("numTwo").value);
+            var total = inp1 + inp2;
+            getId = document.getElementById("getRes");
+            getId.innerHTML = `Result is ${total}`;
+            getId.style.display = 'inline';
+        }
+
+       
+
+    </script>
+ 
+</body>
+</html>
