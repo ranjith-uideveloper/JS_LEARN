@@ -146,5 +146,45 @@
         })
     </script>
 
+    <script>
+
+        // let arrOne = [["ab", "cd"]];
+
+        // for(let l1=0; l1<arrOne.length; l1++){
+        //     for(l2=0; l2<arrOne[l1].length; l2++){
+        //         console.log(arrOne[l1][l2]);
+        //     }
+        // }
+
+        
+        let asArr = { a:"Sachin", b: "Dravid", c: "Ganguly" };
+
+        for(i in asArr){
+            console.log(i);
+        }
+
+
+
+        let arrayOfOddNumbers = [2,4,46];
+        arrayOfOddNumbers[100] = 199;
+        console.log(arrayOfOddNumbers.length);
+
+        
+        const arrayOfNumbers = [1, 2, 3, 4, 5];
+        let numRes = arrayOfNumbers.reduce((accumulator, currentValue, index, array) => array[index] = array[index] * 2);
+        console.log(numRes);
+
+
+        let array = [100,200,300];
+        let sumVal = 0;
+        array.forEach((val)=>{
+            sumVal +=val;
+        })
+        console.log(sumVal);
+        
+        
+
+    </script>
+
 </body>
 </html>
